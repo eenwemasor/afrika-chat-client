@@ -57,7 +57,7 @@
 @media screen and (max-width: 769px) {
   
     .channels{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr !important;
 
     }
     .channels-container {
