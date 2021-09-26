@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap");
+
+@import "./normalize";
+@import "./dashboard";
+@import "./modal";
+@import "./chat";
+@import "./channels";
+
+body {
+  background-color: #1b191e;
+  margin: 0px;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+
+  #root, .App, .container{
+    height: 100%;
+  }
+  .container{
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #120f13;
+  border-radius: 20px;
+  padding: 40px;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+    width: 100%;
+
+    input,
+    button,
+    textarea {
+      color: white;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      border-radius: 7px;
+      font-size: 18px;
+    }
+
+    input,
+    textarea {
+      background-color: #3c393f;
+      padding: 20px;
+    }
+
+    button {
+      background-color: #2f80ed;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1a73e6;
+      }
+    }
+  }
+  .re {
+    color: white;
+    margin-top: 10px;
+    a {
+      color: #3c393f;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.error,
+.success {
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.error {
+  background-color: rgba(255, 0, 0, 0.22);
+  color: red;
+}
+.success {
+  background-color: rgba(0, 255, 72, 0.22);
+  color: rgb(43, 255, 0);
+}
+
+button {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 769px) {
+  .form {
+    padding: 20px;
+  
+    form {
+      gap: 15px;
+  
+      input,
+      button,
+      textarea {
+        font-size: 14px;
+      }
+  
+      input,
+      textarea {
+        background-color: #3c393f;
+        padding: 15px;
+      }
+    }
+  }
+  
+}

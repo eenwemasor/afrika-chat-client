@@ -1,0 +1,54 @@
+.channels-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    width: 100%;
+    color: #f2f2f2;
+    text-align: left;
+    max-width: 1050px;
+  }
+
+  .channels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    .channel-item {
+      background-color: #0b090c;
+      padding: 20px;
+      border-radius: 10px;
+      color: #f2f2f2;
+      max-width: 170px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #f2f2f2;
+        color: #0b090c;
+        opacity: 0.7;
+      }
+
+      span {
+        display: block;
+        margin-top: 10px;
+      }
+      small{
+          display: block;
+          margin-top: 5px;
+      }
+    }
+    .add{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 40px;
+            line-height: 0px;
+        }
+    }
+  }
+}
